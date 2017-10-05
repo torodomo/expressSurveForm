@@ -1,0 +1,36 @@
+<html>
+        <head lang="en">
+            <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="/css/style.css">
+            <title>Survey Form</title>
+        </head>
+        <body>
+            <div>
+                <h4>Submitted Information</h4>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Name:</td>
+                            <td><%= data.name %></td>
+                        </tr>
+                        <tr>
+                            <td>Dojo Location:</td>
+                            <td><%= data.location %></td>
+                        </tr>
+                        <tr>
+                            <td>Favorite Language:</td>
+                            <td><%= data.language %></td>
+                        </tr>
+                        <tr>
+                            <td>Comment:</td>
+                            <td><%= data.comment %></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <form action="/" method="get">
+                    <button type="submit" class="btn">Back</button>
+                </form>
+            </div>
+        </body>
+    
+    </html>
